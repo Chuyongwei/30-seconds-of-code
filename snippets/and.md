@@ -1,11 +1,12 @@
 ---
 title: and
 tags: math,logic,beginner
+unlisted: true
 ---
 
-Returns `true` if both arguments are `true`, `false` otherwise.
+Checks if both arguments are `true`.
 
-Use the logical and (`&&`) operator on the two given values.
+- Use the logical and (`&&`) operator on the two given values.
 
 ```js
 const and = (a, b) => a && b;

@@ -1,11 +1,12 @@
 ---
 title: or
 tags: math,logic,beginner
+unlisted: true
 ---
 
-Returns `true` if at least one of the arguments is `true`, `false` otherwise.
+Checks if at least one of the arguments is `true`.
 
-Use the logical or (`||`) operator on the two given values.
+- Use the logical or (`||`) operator on the two given values.
 
 ```js
 const or = (a, b) => a || b;

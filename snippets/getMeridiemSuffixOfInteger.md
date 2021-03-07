@@ -5,7 +5,7 @@ tags: date,beginner
 
 Converts an integer to a suffixed string, adding `am` or `pm` based on its value.
 
-Use the modulo operator (`%`) and conditional checks to transform an integer to a stringified 12-hour format with meridiem suffix.
+- Use the modulo operator (`%`) and conditional checks to transform an integer to a stringified 12-hour format with meridiem suffix.
 
 ```js
 const getMeridiemSuffixOfInteger = num =>
@@ -19,8 +19,8 @@ const getMeridiemSuffixOfInteger = num =>
 ```
 
 ```js
-getMeridiemSuffixOfInteger(0); // "12am"
-getMeridiemSuffixOfInteger(11); // "11am"
-getMeridiemSuffixOfInteger(13); // "1pm"
-getMeridiemSuffixOfInteger(25); // "1pm"
+getMeridiemSuffixOfInteger(0); // '12am'
+getMeridiemSuffixOfInteger(11); // '11am'
+getMeridiemSuffixOfInteger(13); // '1pm'
+getMeridiemSuffixOfInteger(25); // '1pm'
 ```

@@ -1,17 +1,17 @@
 ---
 title: getBaseURL
-tags: browser,string,url,beginner
+tags: string,browser,regexp,beginner
 ---
 
-Returns the current URL without any parameters.
+Gets the current URL without any parameters or fragment identifiers.
 
-Use `String.prototype.indexOf()` to check if the given `url` has parameters, `String.prototype.slice()` to remove them if necessary.
+- Use `String.prototype.replace()` with an appropriate regular expression to remove everything after either `'?'` or `'#'`, if found.
 
 ```js
-const getBaseURL = url =>
-  url.indexOf('?') > 0 ? url.slice(0, url.indexOf('?')) : url;
+const getBaseURL = url => url.replace(/[?#].*$/, '');
 ```
 
 ```js
-getBaseURL('http://url.com/page?name=Adam&surname=Smith'); // 'http://url.com/page'
+getBaseURL('http://url.com/page?name=Adam&surname=Smith');
+// 'http://url.com/page'
 ```
